@@ -16,14 +16,17 @@ FileHead = '''# Repository_Of_Knowledge
 def addIndex(writeInFile):
     for _ in os.listdir("./"):
         if '.' not in _:
-            writeInFile.write("## "+_+"  \n")
+            writeInFile.write("\n## "+_+"  \n")
             print("\033[1;31;40m \ncurrent folder: %s \033[0m" % (_))
             count = 1
             for f in os.listdir("./"+_+"/"):
-                writeInFile.write("%d. [%s](./%s/%s)  \n" % (count, f, _, f))
-                count += 1
-                print("add finished! -> %s" % (f))
+                if ".md" in f:
+                    writeInFile.write("%d. [%s](./%s/%s)  \n" % (count, f, _, f))
+                    print("add finished（%d Files）! -> %s" % (count, f))
+                    count += 1
+
 
 with open("README.md", "w", encoding="utf-8") as RMFile:
     RMFile.write(FileHead)
     addIndex(RMFile)
+    print("\nproccess over!\n")
