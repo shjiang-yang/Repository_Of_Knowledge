@@ -7,6 +7,7 @@
 ## FPGA  
 1. [20200613-JTAG.md](./FPGA/20200613-JTAG.md)  
 2. [20200614-VGA.md](./FPGA/20200614-VGA.md)  
+3. [20200615-UART.md](./FPGA/20200615-UART.md)  
 
 ## Linux  
 
