@@ -13,3 +13,6 @@
 
 ## Machine_Learning  
 1. [20200614-TransferLearning.md](./Machine_Learning/20200614-TransferLearning.md)  
+
+## Math  
+1. [20200616-FordFulkersonAlgorithm.md](./Math/20200616-FordFulkersonAlgorithm.md)  
